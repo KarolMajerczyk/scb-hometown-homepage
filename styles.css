@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100px;
+  display: block;
+}
+
+/* Common styles */
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 27.6px;
+}
+
+/* Hero section */
+
+#hero-section {
+  min-height: 343px;
+  padding: 20px;
+
+  background-image: url("images/cracow.jpg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  color: #ffffff;
+}
+
+#hero-title {
+  font-size: 32px;
+  background: #1d3557;
+  padding: 5px 12px;
+  line-height: 36px;
+  border-radius: 10px;
+}
+
+#hero-description {
+  max-width: 45ch;
+  font-size: 18px;
+  line-height: 22px;
+  background: #457b9d;
+  border-radius: 10px;
+  padding: 8px 28px;
+}
+
+/* Activities section */
+
+#activities-section {
+  background: #f1faee;
+  padding: 38px 34px;
+  color: #1d3557;
+}
+
+#activities-title {
+  margin-bottom: 54px;
+}
+
+#activities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  max-width: 198px;
+  line-height: 18px;
+}
+
+.activity-image {
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+/* Guide section */
+
+#guide-section {
+  padding: 50px 20px;
+}
+
+.guide-card {
+  max-width: 400px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 5px;
+
+  background: #a8dadc;
+  padding: 22px 12px;
+
+  color: #1d3557;
+  border-radius: 10px;
+  border-bottom: 5px solid #1d3557;
+
+  border: 1px solid black;
+}
+
+.guide-image {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.guide-description {
+  min-width: 15ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.guide-description p {
+  font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  .guide-card {
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+  }
+
+  .guide-description {
+    max-width: 25ch;
+  }
+}
